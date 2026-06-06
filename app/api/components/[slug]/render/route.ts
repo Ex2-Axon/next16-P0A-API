@@ -12,9 +12,9 @@ function renderTemplate(meta: any) {
 
   if (id === 'navbar') {
     const brand = escapeHtml(data.brand ?? 'Microtronic Thailand');
-    const badge = escapeHtml(data.badge ?? 'Donation & Payment');
+    const badge = escapeHtml(data.badge ?? 'Website & Template');
     const subtitle = escapeHtml(data.subtitle ?? '');
-    const actionLabel = escapeHtml(data.actionLabel ?? 'Micro Donate & Payment');
+    const actionLabel = escapeHtml(data.actionLabel ?? 'Micro Website & Template');
     const actionHref = escapeHtml(data.actionHref ?? '#');
     return `
       <nav class="sticky top-0 z-40 border-b border-white/10 bg-slate-950/90 backdrop-blur-xl px-6 py-4">

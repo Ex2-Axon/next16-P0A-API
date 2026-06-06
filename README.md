@@ -78,6 +78,23 @@ Key files and folders:
 - `app/globals.css` – global Tailwind and CSS styles
 - `app/components/` – reusable components like `CookieBanner`, `Footer`, and hero sections
 
+## Shared Remote UI
+
+This API project provides shared component metadata for multiple frontends.
+Frontend sites should use this server as the source of truth for `navbar` and `footer` data so all sites share the same purchase links, legal links, and branding.
+The frontend app `next16-P0A` already consumes `navbar` and `footer` from this API server.
+
+### Example: client points to this API
+
+If you run frontends that consume this API, set the API origin in the frontend environment. Example `.env.local` for a frontend:
+
+```bash
+SERVER_API_URL=https://next16-p0-a-api.vercel.app
+NEXT_PUBLIC_SERVER_API_URL=https://next16-p0-a-api.vercel.app
+```
+
+This ensures the remote `navbar`/`footer` are loaded from this server in production.
+
 ## Notes
 
 - Avoid using npm or yarn commands for this project; use `pnpm` exclusively.

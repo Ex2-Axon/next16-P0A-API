@@ -68,6 +68,44 @@ export const componentRegistry: Record<string, ComponentMetadata> = {
       actionLabel: 'Micro Donate & Payment',
       actionHref: 'https://microtronic-thailand.github.io/micro-payment/',
     },
+    data: {
+      layout: {
+        sticky: true,
+        variant: 'dark',
+        style: 'gradient',
+      },
+      content: {
+        brand: 'Microtronic Thailand',
+        badge: 'Donation & Payment',
+        subtitle: 'Support creators and communities with secure micro donations.',
+        actionLabel: 'Micro Donate & Payment',
+        actionHref: 'https://microtronic-thailand.github.io/micro-payment/',
+        ctaText: 'นัดหมาย Exclusive',
+        ctaHref: '#schedule-section',
+      },
+      socialLinks: [
+        {
+          label: 'Facebook',
+          href: 'https://www.facebook.com/MicrotronicTH',
+        },
+        {
+          label: 'GitHub',
+          href: 'https://github.com/microtronic-thailand',
+        },
+        {
+          label: 'Discord',
+          href: 'https://discord.gg/ZBu8ARCW',
+        },
+        {
+          label: 'LINE',
+          href: 'https://lin.ee/nHRMd36',
+        },
+        {
+          label: 'Email',
+          href: 'mailto:grids@microtronic.biz',
+        },
+      ],
+    },
     imports: ['lucide-react'],
     used_in: ['Layout', 'HomePage'],
   },
@@ -95,6 +133,57 @@ export const componentRegistry: Record<string, ComponentMetadata> = {
     },
     render: {
       description: 'Official donation and payments portal for creators and social projects. Stay connected through secure micro-donations and modern payment flows.',
+      legalLinks: [
+        {
+          label: 'Privacy Policy',
+          href: 'https://microtronic-thailand.github.io/privacy-policy/?lang=en',
+        },
+        {
+          label: 'Terms of Service',
+          href: 'https://microtronic-thailand.github.io/terms-conditions/',
+        },
+      ],
+      contactLinks: [
+        {
+          label: 'Official Website',
+          href: 'https://microtronic.biz/',
+        },
+        {
+          label: 'Email: grids@microtronic.biz',
+          href: 'mailto:grids@microtronic.biz',
+        },
+      ],
+      socialLinks: [
+        {
+          label: 'Facebook',
+          href: 'https://www.facebook.com/MicrotronicTH',
+        },
+        {
+          label: 'GitHub',
+          href: 'https://github.com/microtronic-thailand',
+        },
+        {
+          label: 'Discord',
+          href: 'https://discord.gg/ZBu8ARCW',
+        },
+        {
+          label: 'LINE',
+          href: 'https://lin.ee/nHRMd36',
+        },
+        {
+          label: 'Email',
+          href: 'mailto:grids@microtronic.biz',
+        },
+      ],
+    },
+    data: {
+      layout: {
+        variant: 'dark',
+        width: 'wide',
+      },
+      content: {
+        description: 'Official donation and payments portal for creators and social projects. Stay connected through secure micro-donations and modern payment flows.',
+      },
       legalLinks: [
         {
           label: 'Privacy Policy',
