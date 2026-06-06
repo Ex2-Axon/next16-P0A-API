@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Microtronic Donate & Payment",
+  title: "Micro Next Components API",
   description: "Modern landing page for Microtronic Thailand donations and payment flows.",
 };
 
