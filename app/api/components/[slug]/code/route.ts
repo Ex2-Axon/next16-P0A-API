@@ -1,3 +1,4 @@
+
 import { NextResponse, NextRequest } from 'next/server';
 
 const codeSnippets: Record<string, string> = {
@@ -85,7 +86,7 @@ export async function GET(
     );
   }
 
-  return NextResponse.json({
+return NextResponse.json({
     success: true,
     component: slug,
     language: 'typescript',
