@@ -35,7 +35,7 @@ export default function Home() {
     { id: 'cookieBanner', name: 'CookieBanner', description: 'Cookie notice' },
   ];
 
-  const apiOrigin = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:3010';
+  const apiOrigin = process.env.NEXT_PUBLIC_API_URL ?? 'https://next16-p0-a-api.vercel.app';
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950 text-slate-100">

@@ -49,7 +49,7 @@ Run the development server:
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to view the app.
+Open [http://localhost:3000](http://localhost:3000) to view the app locally, or visit [https://next16-p0-a-api.vercel.app](https://next16-p0-a-api.vercel.app) in production.
 
 Build for production:
 
@@ -98,7 +98,7 @@ Run locally with:
 
 ```bash
 pnpm install
-node screenshot.js https://next16-p0a.vercel.app screenshot.png
+node screenshot.js https://next16-p0-a-api.vercel.app screenshot.png
 ```
 
 Or use the package script:
@@ -110,7 +110,7 @@ pnpm screenshot
 If you want to target a different URL, pass it as the first argument:
 
 ```bash
-node screenshot.js https://your-deployment-url.vercel.app output.png
+node screenshot.js https://next16-p0-a-api.vercel.app output.png
 ```
 
 This also supports CI automation by setting the `SCREENSHOT_URL` environment variable.

@@ -135,10 +135,10 @@ Create a `.env.local` file:
 ```env
 # Server Configuration
 NODE_ENV=development
-NEXT_PUBLIC_API_URL=http://localhost:3001
+NEXT_PUBLIC_API_URL=https://next16-p0-a-api.vercel.app
 
 # CORS Settings (if needed)
-ALLOWED_ORIGINS=http://localhost:3000,http://localhost:3001,https://microtronic.biz
+ALLOWED_ORIGINS=http://localhost:3000,http://localhost:3001,https://microtronic.biz,https://next16-p0-a-api.vercel.app
 ```
 
 ## Running the Server
@@ -147,7 +147,7 @@ ALLOWED_ORIGINS=http://localhost:3000,http://localhost:3001,https://microtronic.
 ```bash
 pnpm dev
 ```
-Server runs at `http://localhost:3000` (or next available port)
+Server runs at `http://localhost:3000` (or next available port). In production, the API is available at `https://next16-p0-a-api.vercel.app`.
 
 ### Production Build
 ```bash
@@ -157,7 +157,7 @@ pnpm start
 
 ### Health Check
 ```bash
-curl http://localhost:3000/api/health
+curl https://next16-p0-a-api.vercel.app/api/health
 ```
 
 ## CORS Configuration
@@ -226,15 +226,15 @@ app/
 ### JavaScript/TypeScript Client
 ```typescript
 // Fetch all components
-const response = await fetch('http://localhost:3000/api/components');
+const response = await fetch('https://next16-p0-a-api.vercel.app/api/components');
 const data = await response.json();
 
 // Get specific component
-const heroComponent = await fetch('http://localhost:3000/api/components/hero');
+const heroComponent = await fetch('https://next16-p0-a-api.vercel.app/api/components/hero');
 const heroData = await heroComponent.json();
 
 // Get component code
-const code = await fetch('http://localhost:3000/api/components/hero/code');
+const code = await fetch('https://next16-p0-a-api.vercel.app/api/components/hero/code');
 const codeData = await code.json();
 console.log(codeData.code);
 ```
